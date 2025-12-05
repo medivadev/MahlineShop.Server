@@ -1,0 +1,18 @@
+﻿services:
+  mssql-mahline:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: mahlineshop-catalog-db
+    environment:
+      ACCEPT_EULA: Y
+      SA_PASSWORD: "123456789"
+    ports:
+      - "1433:1433"
+    volumes:
+      # We reference 'mahlineshop_data' (lowercase)
+      - mahlineshop_data:/var/opt/mssql
+    restart: always
+
+# Top-level volume definition
+volumes:
+  # This MUST match the name used above exactly
+  mahlineshop_data:

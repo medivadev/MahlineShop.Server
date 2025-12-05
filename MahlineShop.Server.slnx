@@ -1,0 +1,19 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="Directory.Packages.props" />
+    <File Path="docker-compose.yml" />
+  </Folder>
+  <Folder Name="/src/" />
+  <Folder Name="/src/Bootstrapper/">
+    <Project Path="src/Bootstrapper/MahlineShop.Api/MahlineShop.Api.csproj" />
+  </Folder>
+  <Folder Name="/src/Modules/">
+    <Project Path="src/Modules/MahlineShop.Modules.Basket/MahlineShop.Modules.Basket.csproj" />
+    <Project Path="src/Modules/MahlineShop.Modules.Catalog/MahlineShop.Modules.Catalog.csproj" />
+    <Project Path="src/Modules/MahlineShop.Modules.Identity/MahlineShop.Modules.Identity.csproj" />
+    <Project Path="src/Modules/MahlineShop.Modules.Ordering/MahlineShop.Modules.Ordering.csproj" />
+  </Folder>
+  <Folder Name="/src/Shared/">
+    <Project Path="src/Shared/MahlineShop.Shared/MahlineShop.Shared.csproj" />
+  </Folder>
+</Solution>
